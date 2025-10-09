@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras Maiúsculas e minúsculas</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de letras maiúsculas e minúscula</h1>
+
+    <script>
+        let n1 = window.prompt('Qual seu nome?'.toUpperCase());
+        document.write(`seu nome em letras maiúsculas é ${n1.toUpperCase()}`); 
+        document.write(` e em letras minúsculas é ${n1.toLowerCase()}`);
+    </script>
+</body>
+</html>
