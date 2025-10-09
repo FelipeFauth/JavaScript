@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valor Monetario</title>
+    <title>Teste Monetario</title>
 </head>
 <body>
-    <h1>Testando valor Monetario</h1>
+    <h1>Teste para formatar um valor Monetario em reais</h1>
 
     <script>
-        let n1 = Number(window.prompt('digite um valor'))
-        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        let valor = Number(window.prompt('Digite um valor!'))
+        document.write(`${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
 
         // Uma das caracteristicas do (prompt) é que sempre retornara o valor em string
     </script>
