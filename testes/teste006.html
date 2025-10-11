@@ -6,6 +6,26 @@
     <title>Seu País</title>
 </head>
 <body>
-    
+    <h1>Seu país</h1>
+    <label for="país"> De qual país você é:
+        <input type="text" name="país" id="país">
+    </label>
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="r">
+        
+    </div>
+
+    <script>
+        function enviar() {
+            let país = document.getElementById('país')
+            let res = document.getElementById('r')
+
+            if (país.value == 'Brasil', 'brasil') {
+                res.innerHTML = `<p>Você é do Brasil, então é Brasileiro</p>`
+            }else {
+                res.innerHTML = `<p>Você não é do Brasil, então é Estrangeiro</p>`
+            }
+        }
+    </script>
 </body>
 </html>
